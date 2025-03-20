@@ -41,6 +41,7 @@ export function CurrencyConverter() {
     if (amount && fromCurrency && toCurrency) {
       convertCurrency()
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amount, fromCurrency, toCurrency])
 
   const convertCurrency = async () => {
