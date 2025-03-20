@@ -74,9 +74,6 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      borderColor: {
-        border: '#yourDesiredColor', // Replace with your custom color value
-      },
     },
   },
   plugins: [tailwindcssAnimate],

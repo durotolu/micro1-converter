@@ -104,15 +104,17 @@ export function CurrencyConverter() {
           <AmountPresets onPresetClick={handlePresetClick} />
         </div>
 
-        <div className="grid grid-cols-[1fr,auto,1fr] items-center gap-2">
+        <div className="grid grid-cols-3 justify-between items-center">
           <div className="space-y-2">
             <Label htmlFor="from-currency">From</Label>
             <CurrencySelector id="from-currency" value={fromCurrency} onChange={setFromCurrency} />
           </div>
 
-          <Button variant="outline" size="icon" onClick={swapCurrencies} className="mt-8" aria-label="Swap currencies">
-            <ArrowLeftRight className="h-4 w-4" />
-          </Button>
+          <div className="self-end flex justify-center">
+            <Button variant="outline" size="icon" onClick={swapCurrencies} className="self-end" aria-label="Swap currencies">
+              <ArrowLeftRight className="h-4 w-4" />
+            </Button>
+          </div>
 
           <div className="space-y-2">
             <Label htmlFor="to-currency">To</Label>
